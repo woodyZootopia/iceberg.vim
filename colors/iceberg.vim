@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2020-07-20 14:00+0300
+" Modified:   2020-09-26 12:51+0900
 " License:    MIT
 
 
@@ -232,6 +232,18 @@ if &background == 'light'
   hi! link typescriptMessage Normal
   hi! link typescriptNull Constant
   hi! link typescriptParens Normal
+  hi! link LspDiagnosticsError ErrorMsg
+  hi! link LspDiagnosticsErrorSign ALEErrorSign
+  hi! link LspDiagnosticsErrorFloating ErrorMsg
+  hi! link LspDiagnosticsWarning ALEVirtualTextWarning
+  hi! link LspDiagnosticsWarningSign ALEWarningSign
+  hi! link LspDiagnosticsWarningFloating ALEVirtualTextWarning
+  hi! link LspDiagnosticsInformation ALEVirtualTextWarning
+  hi! link LspDiagnosticsInformationSign ALEWarningSign
+  hi! link LspDiagnosticsInformationFloating ALEVirtualTextWarning
+  hi! link LspDiagnosticsHint ALEVirtualTextWarning
+  hi! link LspDiagnosticsHintSign ALEWarningSign
+  hi! link LspDiagnosticsHintFloating ALEVirtualTextWarning
 
   if has('nvim')
     let g:terminal_color_0 = '#dcdfe7'
@@ -465,6 +477,18 @@ else
   hi! link typescriptMessage Normal
   hi! link typescriptNull Constant
   hi! link typescriptParens Normal
+  hi! link LspDiagnosticsError ErrorMsg
+  hi! link LspDiagnosticsErrorSign ALEErrorSign
+  hi! link LspDiagnosticsErrorFloating ErrorMsg
+  hi! link LspDiagnosticsWarning ALEVirtualTextWarning
+  hi! link LspDiagnosticsWarningSign ALEWarningSign
+  hi! link LspDiagnosticsWarningFloating ALEVirtualTextWarning
+  hi! link LspDiagnosticsInformation ALEVirtualTextWarning
+  hi! link LspDiagnosticsInformationSign ALEWarningSign
+  hi! link LspDiagnosticsInformationFloating ALEVirtualTextWarning
+  hi! link LspDiagnosticsHint ALEVirtualTextWarning
+  hi! link LspDiagnosticsHintSign ALEWarningSign
+  hi! link LspDiagnosticsHintFloating ALEVirtualTextWarning
 
   if has('nvim')
     let g:terminal_color_0 = '#1e2132'

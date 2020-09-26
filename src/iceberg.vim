@@ -727,6 +727,20 @@ function! s:create_colors(palette) abort
   call add(links, pgmnt#hi#link('typescriptNull', 'Constant'))
   call add(links, pgmnt#hi#link('typescriptParens', 'Normal'))
 
+  " Neovim built-in LSP
+  call add(links, pgmnt#hi#link('LspDiagnosticsError',               'ErrorMsg'))
+  call add(links, pgmnt#hi#link('LspDiagnosticsErrorSign',           'ALEErrorSign'))
+  call add(links, pgmnt#hi#link('LspDiagnosticsErrorFloating',       'ErrorMsg'))
+  call add(links, pgmnt#hi#link('LspDiagnosticsWarning',             'ALEVirtualTextWarning'))
+  call add(links, pgmnt#hi#link('LspDiagnosticsWarningSign',         'ALEWarningSign'))
+  call add(links, pgmnt#hi#link('LspDiagnosticsWarningFloating',     'ALEVirtualTextWarning'))
+  call add(links, pgmnt#hi#link('LspDiagnosticsInformation',         'ALEVirtualTextWarning'))
+  call add(links, pgmnt#hi#link('LspDiagnosticsInformationSign',     'ALEWarningSign'))
+  call add(links, pgmnt#hi#link('LspDiagnosticsInformationFloating', 'ALEVirtualTextWarning'))
+  call add(links, pgmnt#hi#link('LspDiagnosticsHint',                'ALEVirtualTextWarning'))
+  call add(links, pgmnt#hi#link('LspDiagnosticsHintSign',            'ALEWarningSign'))
+  call add(links, pgmnt#hi#link('LspDiagnosticsHintFloating',        'ALEVirtualTextWarning'))
+
   " [zenspace.vim](https://github.com/thinca/vim-zenspace)
   call extend(rules, pgmnt#hi#group(
         \ 'ZenSpace', {
